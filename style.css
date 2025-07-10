@@ -143,7 +143,7 @@ table {
   box-sizing: border-box;
 }
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   display: block;
 }
@@ -209,6 +209,12 @@ h5 {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+.pt-64 {
+  padding-top: 64px;
+}
+.pb-64 {
+  padding-bottom: 64px;
+}
 .py-4 {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -260,11 +266,12 @@ h5 {
 .quote {
   text-align: center;
 }
-.intro img {
+img.intro {
+  margin: 0 auto;
   width: 1076px;
-  max-width: none;
-  /* margin-left: -110px; */
-  /* margin-right: -110px; */
+  /* max-width: none; */
+  /* margin-left: -110px;
+  margin-right: -110px; */
 }
 .section-lined {
   border-bottom: 1px solid var(--neutral-300);
@@ -276,7 +283,7 @@ h5 {
 .history ol li::marker {
   font-size: 10px;
 }
-.history span {
+.history time {
   padding-right: 8px;
   margin-right: 8px;
   border-right: 1px solid var(--neutral-900);
@@ -297,4 +304,7 @@ h5 {
 .footer {
   background-color: var(--neutral-100);
   text-align: center;
+}
+.story a:hover {
+  color: #477a11;
 }
